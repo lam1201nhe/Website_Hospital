@@ -21,7 +21,6 @@ function userLogin() {
     }
   }
   if(flag){
-    alert("Login sucessfully!")
     window.location.href="indexafterlog.html";
   }else {
     alerts.innerText = "Login failed";
