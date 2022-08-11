@@ -7,8 +7,9 @@ submitLogin.addEventListener("click", (event) => {
   event.preventDefault();
   userLogin();
 });
-let user = JSON.parse(localStorage.getItem("users"));
 
+
+let user = JSON.parse(localStorage.getItem("users"));
 function userLogin() {
     let flag = false;
   for (let e of user) {
