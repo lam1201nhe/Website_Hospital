@@ -3,7 +3,8 @@ const users = [];
 let name2 = document.getElementById("form3Example1cg");
 let submit = document.getElementById('submit-btn');
 
-submit.addEventListener('click', (event) => {
+if(submit){
+    submit.addEventListener('click', (event) => {
     event.preventDefault();
     let name = name2.value;
     let phone = document.getElementById("form3Example2cg").value;
@@ -19,6 +20,7 @@ submit.addEventListener('click', (event) => {
     localStorage.setItem('users', JSON.stringify(users));
     console.log(users[users.length - 1]);
 });
+}
 
 //Check user empty
 function checkUserEmpty(name, phone, email, password) {
