@@ -62,7 +62,7 @@
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input
-                  type="email"
+                  type="text"
                   id="form1Example13"
                   class="form-control form-control-lg"
                 />
@@ -101,11 +101,14 @@
                 <a href="#!">Quên mật khẩu?</a>
               </div>
 
+              <!-- alert -->
+                <p id="alert" style="text-align:center; display: none; font-weight:bold; font-size:15px; font-style: italic;">a</p>
               <!-- Submit button -->
               <button
-                type="submit"
+               
                 class="btn btn-primary btn-lg btn-block"
                 style="background-color: #0096ff"
+                id="submit-login"
               >
                 Đăng Nhập
               </button>
@@ -135,6 +138,7 @@
         </div>
       </div>
     </section>
+    <script src="JS/login.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"

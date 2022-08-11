@@ -2,6 +2,7 @@ const users = [];
 
 let name2 = document.getElementById("form3Example1cg");
 let submit = document.getElementById('submit-btn');
+
 submit.addEventListener('click', (event) => {
     event.preventDefault();
     let name = name2.value;
